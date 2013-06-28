@@ -24,7 +24,7 @@ body {
   font-weight: bold;
   line-height: 30px;
   height: 30px;
-  padding: 0 7px;
+  padding: 0 6px;
   font-size: 13px;
   color: #c0c0c0;
   display: inline-block;
@@ -43,16 +43,20 @@ a:hover, button:hover {
 li.active, .topBar li:hover {
   color: #FFF;
 }
+.signIn {
+  min-width: 965px;
+  overflow: hidden;
+  right: 0;
+}
 
 .signInButton {
-  display:block;
   height: 30px;
   margin-top: 20px;
   margin-right: 28px;
-  right: 0;
+  float: right;
   width: 73px;
   border-radius: 2px;
-  position: absolute;
+  position: relative;
   background-color: #d14836;
   text-align: center;
 }
@@ -67,13 +71,6 @@ li.active, .topBar li:hover {
   text-transform: uppercase;
   line-height: 30px;
 }
-
-/* display only when logged in
-.topbar {
-  background-color: #444;
-  height: 30px;
-  margin-bottom: 70px;
-} */
 
 .logoDiv {
   height: 231; /* May be relative, just as displayed */
@@ -103,8 +100,7 @@ li.active, .topBar li:hover {
   padding: 0;
   margin: auto;
   height: 27px;
-  max-width: 570px;
-  min-width: 500px;
+  width: 534px;
 }
 
 .buttons {
