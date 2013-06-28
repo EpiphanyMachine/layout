@@ -1,3 +1,57 @@
-body {
+body{
   /* rules go here */
+}
+
+.signInButton {
+  display:block;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 28px;
+  right: 0;
+  width: 73px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: #d14836;
+  text-align: center;
+}
+
+.signInButton span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+/* display only when logged in
+.topbar {
+  background-color: #444;
+  height: 30px;
+  margin-bottom: 70px;
+} */
+
+.logoDiv {
+  height: 231; /* May be relative, just as displayed */
+}
+
+.logoBox {
+  padding-top: 112px;
+}
+
+.searchDiv {
+  display: block;
+  text-align: center;
+  height: 102px;
+}
+
+.searchForm {
+  display: block;
+  margin: auto;
+  min-width: 534px;
+  max-width: 572px;
+  padding: 0 223px !important;
+  line-height: 27px;
 }
