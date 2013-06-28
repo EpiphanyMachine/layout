@@ -1,5 +1,47 @@
-body{
+body {
   /* rules go here */
+  margin: 0 auto;
+  font-family: arial, sans-serif;
+  min-width: 600px;
+}
+
+.topBar {
+  height: 30px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: -16px; /* Not ideal */
+  background-color: #222;
+}
+
+.topBar ul {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.topBar li {
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 7px;
+  font-size: 13px;
+  color: #c0c0c0;
+  display: inline-block;
+  list-style-type: none;
+}
+
+a, a:hover, a:active, a:visited, a:link{
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+li.active, .topBar li:hover {
+  color: #FFF;
 }
 
 .signInButton {
@@ -35,10 +77,12 @@ body{
 
 .logoDiv {
   height: 231; /* May be relative, just as displayed */
+  text-align: center;
 }
 
 .logoBox {
   padding-top: 112px;
+  margin: auto;
 }
 
 .searchDiv {
@@ -48,10 +92,37 @@ body{
 }
 
 .searchForm {
-  display: block;
-  margin: auto;
+  margin: 20px auto;
   min-width: 534px;
   max-width: 572px;
-  padding: 0 223px !important;
   line-height: 27px;
+}
+
+.searchForm input {
+  border: 1px solid gray;
+  padding: 0;
+  margin: auto;
+  height: 27px;
+  max-width: 570px;
+  min-width: 500px;
+}
+
+.buttons {
+  margin: auto;
+  display: block;
+  text-align: center;
+
+}
+
+.buttons button {
+  font-weight: bold;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  background-color: white;
+  padding: 8px;
+  margin: 0 4px;
+}
+
+button:hover {
+  border-color: silver;
 }
